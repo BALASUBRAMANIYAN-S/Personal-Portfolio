@@ -193,6 +193,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
+/*  */
 
 .about_section img:hover {
     box-shadow: rgb(255, 3, 3) 0px 5px 15px;
@@ -585,5 +586,113 @@ body {
   background-color: #0056b3;
 }
 
-
+.media{
+    display: none;
+}
 /* media  */
+@media (max-width:600px){
+    body {
+        font-size: 13px;
+        background-color:transparent;
+        padding: 0%;
+    }
+    .header{
+        display: none;
+    }
+    .bala_about{
+        display: none;
+    }
+    .home{
+        padding-top: 100px;
+    }
+    .home_name{
+        left: 70px;
+    }
+    .typing-effect{
+        font-size: 15px;
+    }
+    .home_name a{
+        display: none;
+    }
+    .media {
+        position: fixed;
+        left: 20px;
+        top: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 1000;
+        align-items: center;
+        padding: 20px 0;
+        
+      }
+      .h_one{
+        border: 1px solid #6d09e0; /* Vertical line */
+        height: 20px; /* Adjust height based on content */
+      }
+      .h_two{
+        border: 1px solid #0066ff; /* Vertical line */
+        height:100px; /* Adjust height based on content */
+      }
+      
+      .fixed-icon {
+        font-size: 20px;
+        color: #333;
+        transition: color 0.3s ease, transform 0.3s ease;
+      }
+      
+      .fixed-icon:hover {
+        color: #0077b5;
+      }
+    .home img{
+       display: none;
+    }  
+    .about_header{
+        padding-top: 20px;
+        margin-left: 200px;
+        position: absolute;
+        
+    }  
+
+    .about_section{
+        display: block;
+    }
+    .about_section img {
+        height: 200px;
+        width: 180px;
+        border-radius: 50px;
+        margin-left: 180px;
+        margin-top: 70px;
+    
+    }
+    .about_details_header{
+        padding-right: 20px;
+    }
+    .about_details_header_one{
+        display: block;
+        margin-left: 200px;
+    }
+    .about_details_header_one h4{
+        padding-top: 5px;
+    }
+    .about_details_header_two{
+        display: block;
+        margin-top: 1px;
+        margin-left: 200px;
+    }
+    .about_details_header_two h4{
+        padding-top: 5px;
+    }
+    .about_details{
+        padding-top: 0%;
+        padding-left: 50px;
+        /* padding-right: 10px; */
+    }
+    .about_details_pra{
+    display: none;
+    }
+    .download-btn{
+        position: relative;
+        bottom: 55px;
+    }
+}
