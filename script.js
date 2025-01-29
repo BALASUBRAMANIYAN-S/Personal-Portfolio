@@ -60,17 +60,17 @@ document.addEventListener("DOMContentLoaded", () => {
   
 // resume download option below 
 document.getElementById("download-resume-btn").addEventListener("click", () => {
-    // Create an anchor element
-    const anchor = document.createElement("a");
+  // Create an anchor element
+  const anchor = document.createElement("a");
 
-    // Set the href to your resume file path
-    anchor.href = "resume.pdf"; // Replace with the actual path to your resume file
+  // Set the href to the resume file in the 'assets' folder
+  anchor.href = "assets/Balasubramaniyan_Resume.pdf";
 
-    // Set the download attribute to the desired file name
-    anchor.download = "Balasubramaniyan_Resume.pdf";
+  // Set the download attribute to the desired file name
+  anchor.download = "Balasubramaniyan_Resume.pdf";
 
-    // Trigger a click on the anchor element
-    anchor.click();
+  // Trigger a click on the anchor element to start the download
+  anchor.click();
 });
 // icon effect is bottom 
 
@@ -144,12 +144,13 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
     // mobile view bar
     
     const hamburgerIcon = document.getElementById("hamburger-icon");
-    const navOptions = document.getElementById("nav-option");
-    
-    // Add event listener to the hamburger icon
-    hamburgerIcon.addEventListener("click", function() {
-        // Toggle the 'show-nav' class on the navigation options
-        navOptions.classList.toggle("show-nav");
-    });
+const navOptions = document.getElementById("nav-option");
+
+// Add event listener to the hamburger icon
+hamburgerIcon.addEventListener("click", function() {
+    // Toggle the 'show-nav' class on the navigation options
+    navOptions.classList.toggle("show-nav");
+});
+
 
   }
