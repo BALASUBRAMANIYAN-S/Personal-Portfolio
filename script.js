@@ -139,4 +139,17 @@ document.querySelector('.contact-form').addEventListener('submit', (e) => {
     setTimeout(() => {
       statusMessage.remove();
     }, 5000);
+
+
+    // mobile view bar
+    
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const navOptions = document.getElementById("nav-option");
+    
+    // Add event listener to the hamburger icon
+    hamburgerIcon.addEventListener("click", function() {
+        // Toggle the 'show-nav' class on the navigation options
+        navOptions.classList.toggle("show-nav");
+    });
+
   }

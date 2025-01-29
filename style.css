@@ -3,6 +3,14 @@
     padding: 0%;
     margin: 0%;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 .header {
     position: sticky;
@@ -11,7 +19,12 @@
     z-index: 1;
 
 }
-
+.hamburger-icon i {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -595,9 +608,12 @@ body {
         font-size: 13px;
         background-color:transparent;
         padding: 0%;
+        overflow-x: hidden;
+        width: 100%
     }
-    .header{
-        display: none;
+    .navbar {
+        padding: 2px;
+    
     }
     .bala_about{
         display: none;
@@ -649,7 +665,7 @@ body {
     }  
     .about_header{
         padding-top: 20px;
-        margin-left: 200px;
+        margin-left: 170px;
         position: absolute;
         
     }  
@@ -661,7 +677,7 @@ body {
         height: 200px;
         width: 180px;
         border-radius: 50px;
-        margin-left: 180px;
+        /* margin-left: 180px; */
         margin-top: 70px;
     
     }
@@ -695,4 +711,62 @@ body {
         position: relative;
         bottom: 55px;
     }
+    .skills h2 {
+        margin-left: 80px;
+        margin-right: 0px; /* Moves heading to the right */
+         /* Aligns text to the right */
+        font-size: 24px;
+
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 items per row */
+        gap: 15px;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    .skill-item {
+        width: 100px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .skill-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skill-item p {
+        font-size: 14px;
+    }
+    .nav_option { 
+        display: none;}
+    .hamburger-icon i{display: block;
+    }
+   .nav_option {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 350px;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .nav_option a {
+        margin: 10px 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+}
+
+.show-nav {
+    display: flex !important;
 }
